@@ -6,7 +6,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/openjdk:14.0.2-browsers
+      - image: circleci/openjdk:14.0.2-jdk-buster-node
     steps:
       - checkout
       - restore_cache:
